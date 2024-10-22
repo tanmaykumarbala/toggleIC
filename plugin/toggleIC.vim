@@ -4,8 +4,8 @@ else
 	let g:default_toggle_ic_map_key = "<leader>i"
 endif
 
-""" Function to toogle IC
-function ToggleIC()
+""" Function to toggle IC
+function! ToggleIC()
 	if &l:ic == "1"
 		set noic
 		echo "Ignore case off"
@@ -18,6 +18,6 @@ endfunction
 """ Setting the command for easy refrence.
 command! -nargs=0 ToggleIgnoreCase :call ToggleIC()
 
-""" Default key maping.
+""" Default key mapping.
 execute 'nnoremap '.g:default_toggle_ic_map_key.' :ToggleIgnoreCase <cr>'
 execute 'inoremap '.g:default_toggle_ic_map_key.' <c-i>:ToggleIgnoreCase <cr>'
