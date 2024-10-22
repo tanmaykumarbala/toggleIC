@@ -19,5 +19,5 @@ endfunction
 command! -nargs=0 ToggleIgnoreCase :call ToggleIC()
 
 """ Default key maping.
-execute 'nnoremap '.g:default_toogle_number_map_key.' :ToggleIgnoreCase <cr>'
-execute 'inoremap '.g:default_toogle_number_map_key.' <c-i>:ToggleIgnoreCase <cr>'
+execute 'nnoremap '.g:default_toggle_ic_map_key.' :ToggleIgnoreCase <cr>'
+execute 'inoremap '.g:default_toggle_ic_map_key.' <c-i>:ToggleIgnoreCase <cr>'
